@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  
+
   resources :usuarios
   resources :habilidades
-  resources :categoria
-  resources :ferramenta
+  resources :categorias
+  resources :ferramentas
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root :to => "ferramenta#index"
+  root :to => "ferramentas#index"
 
 
   #get "/pages/home"

@@ -2,12 +2,16 @@
 
 <h1>Usuarios</h1>
 
-<table class="table">
+<table>
   <thead>
     <tr>
       <th>Nome</th>
+      <th>Login</th>
       <th>Email</th>
-      <th>Endereco</th>
+      <th>Tel</th>
+      <th>Cep</th>
+      <th>Cidade</th>
+      <th>Pais</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,8 +20,12 @@
     <% @usuarios.each do |usuario| %>
       <tr>
         <td><%= usuario.nome %></td>
+        <td><%= usuario.login %></td>
         <td><%= usuario.email %></td>
-        <td><%= usuario.endereco %></td>
+        <td><%= usuario.tel %></td>
+        <td><%= usuario.cep %></td>
+        <td><%= usuario.cidade %></td>
+        <td><%= usuario.pais %></td>
         <td><%= link_to 'Show', usuario %></td>
         <td><%= link_to 'Edit', edit_usuario_path(usuario) %></td>
         <td><%= link_to 'Destroy', usuario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -28,4 +36,4 @@
 
 <br>
 
-<%= link_to 'Novo Usuario', new_usuario_path %>
+<%= link_to 'New Usuario', new_usuario_path %>

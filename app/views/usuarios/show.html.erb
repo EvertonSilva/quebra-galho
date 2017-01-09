@@ -6,13 +6,33 @@
 </p>
 
 <p>
+  <strong>Login:</strong>
+  <%= @usuario.login %>
+</p>
+
+<p>
   <strong>Email:</strong>
   <%= @usuario.email %>
 </p>
 
 <p>
-  <strong>Endereco:</strong>
-  <%= @usuario.endereco %>
+  <strong>Tel:</strong>
+  <%= @usuario.tel %>
+</p>
+
+<p>
+  <strong>Cep:</strong>
+  <%= @usuario.cep %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @usuario.cidade %>
+</p>
+
+<p>
+  <strong>Pais:</strong>
+  <%= @usuario.pais %>
 </p>
 
 <%= link_to 'Edit', edit_usuario_path(@usuario) %> |

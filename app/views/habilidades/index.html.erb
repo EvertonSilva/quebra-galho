@@ -7,7 +7,9 @@
     <tr>
       <th>Nome</th>
       <th>Descricao</th>
-      <th>Categoria</th>
+      <th>Possuo Ferramenta</th>
+      <th>Valor</th>
+      <th>Disponibilidade</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,7 +19,9 @@
       <tr>
         <td><%= habilidade.nome %></td>
         <td><%= habilidade.descricao %></td>
-        <td><%= habilidade.categoria %></td>
+        <td><%= habilidade.possuo_ferramenta %></td>
+        <td><%= habilidade.valor %></td>
+        <td><%= habilidade.disponibilidade %></td>
         <td><%= link_to 'Show', habilidade %></td>
         <td><%= link_to 'Edit', edit_habilidade_path(habilidade) %></td>
         <td><%= link_to 'Destroy', habilidade, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ferramentas</h1>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Descricao</th>
+      <th>Disponibilidade</th>
+      <th>Categoria</th>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Tempo de Uso</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ferramentas.each do |ferramenta| %>
+      <tr>
+        <td><%= ferramenta.nome %></td>
+        <td><%= ferramenta.descricao %></td>
+        <td><%= ferramenta.disponibilidade %></td>
+        <td><%= ferramenta.categoria.nome %></td>
+        <td><%= ferramenta.marca %></td>
+        <td><%= ferramenta.modelo %></td>
+        <td><%= ferramenta.tempo_de_uso %></td>
+        <td><%= ferramenta.usuario_id %></td>
+        <td><%= link_to 'Show', ferramenta %></td>
+        <td><%= link_to 'Edit', edit_ferramenta_path(ferramenta) %></td>
+        <td><%= link_to 'Destroy', ferramenta, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nova Ferramenta', new_ferramenta_path %>

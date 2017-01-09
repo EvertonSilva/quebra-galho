@@ -11,9 +11,20 @@
 </p>
 
 <p>
-  <strong>Categoria:</strong>
-  <%= @habilidade.categoria.nome %>
+  <strong>Possuo Ferramenta:</strong>
+  <%= @habilidade.possuo_ferramenta %>
 </p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @habilidade.valor %>
+</p>
+
+<p>
+  <strong>Disponibilidade:</strong>
+  <%= @habilidade.disponibilidade %>
+</p>
+
 
 <%= link_to 'Edit', edit_habilidade_path(@habilidade) %> |
 <%= link_to 'Back', habilidades_path %>

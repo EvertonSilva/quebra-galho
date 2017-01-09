@@ -21,10 +21,21 @@
     <%= f.text_area :descricao %>
   </div>
 
+  <div class="field">
+    <%= f.check_box :possuo_ferramenta %>
+    <%= f.label :possuo_ferramenta, id: :possuo_ferramenta %>
+  </div>
 
-  <%=f.collection_select :categoria_id, @categorias, :id, :nome, prompt: true %>
-  <%#=f.select :categoria_id, @categorias%>
-  
+  <div class="field">
+    <%= f.label :valor %>
+    <%= f.text_area :valor %>
+  </div>
+
+  <div class="field">
+    <%= f.check_box :disponibilidade %>
+    <%= f.label :disponibilidade, id: :disponibilidade %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

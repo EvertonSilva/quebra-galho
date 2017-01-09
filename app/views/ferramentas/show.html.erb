@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @ferramenta.nome %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @ferramenta.descricao %>
+</p>
+
+<p>
+  <strong>Disponibilidade:</strong>
+  <%= @ferramenta.disponibilidade %>
+</p>
+
+<p>
+  <strong>Categoria:</strong>
+  <%= @ferramenta.categoria.nome %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @ferramenta.marca %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @ferramenta.modelo %>
+</p>
+
+<p>
+  <strong>Tempo de uso:</strong>
+  <%= @ferramenta.tempo_de_uso %>
+</p>
+
+<%= link_to 'Edit', edit_ferramenta_path(@ferramenta) %> |
+<%= link_to 'Back', ferramentas_path %>
